@@ -1,0 +1,61 @@
+{
+  "generator-jhipster": {
+    "authenticationType": "jwt",
+    "cacheProvider": "no",
+    "clientFramework": "angularX",
+    "serverPort": "8080",
+    "serviceDiscoveryType": false,
+    "skipUserManagement": false,
+    "withAdminUi": true,
+    "baseName": "Appointementsystem",
+    "buildTool": "maven",
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "enableHibernateCache": true,
+    "enableSwaggerCodegen": false,
+    "enableTranslation": true,
+    "jhiPrefix": "jhi",
+    "languages": ["en", "fr"],
+    "messageBroker": false,
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "skipClient": false,
+    "testFrameworks": [],
+    "websocket": false,
+    "applicationType": "monolith",
+    "reactive": true,
+    "packageName": "com.reactnatjhip.developer",
+    "packageFolder": "com/reactnatjhip/developer",
+    "nativeLanguage": "fr",
+    "jhipsterVersion": "7.1.0",
+    "skipServer": false,
+    "clientPackageManager": "npm",
+    "dtoSuffix": "DTO",
+    "entitySuffix": "",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "applicationIndex": 0,
+    "entities": ["Appointment", "Manager", "Company", "Bank", "Adviser"],
+    "skipCheckLengthOfIdentifier": false,
+    "skipFakeData": false,
+    "blueprints": [
+      {
+        "name": "generator-jhipster-react-native",
+        "version": "4.2.0"
+      }
+    ],
+    "otherModules": [
+      {
+        "name": "generator-jhipster-react-native",
+        "version": "4.2.0"
+      }
+    ],
+    "pages": [],
+    "creationTimestamp": 1630496770619,
+    "reactNative": {
+      "reactNativeAppName": "myrnapp",
+      "detox": false
+    },
+    "lastLiquibaseTimestamp": 1630497070000
+  }
+}
