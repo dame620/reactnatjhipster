@@ -13,20 +13,20 @@ function HomeScreen(props) {
     <View style={[styles.container, styles.mainContainer]} testID="homeScreen">
       <ScrollView contentInsetAdjustmentBehavior="automatic" style={styles.scrollView}>
         <View style={styles.centered}>
-          <Image source={Images.logoJhipster} style={styles.logo} />
-          <Text style={styles.welcomeText}>myrnapp</Text>
-          <Text style={styles.welcomeText}>Welcome to your JHipster React Native app.</Text>
+          <Image source={Images.banquervlogo} style={styles.logo} />
+          <Text style={styles.welcomeText}>Baamtu</Text>
+          <Text style={styles.welcomeText}>Bienvenue dans votre systeme de planification de rendez vous.</Text>
         </View>
         {account && account.login ? (
           <View style={[styles.authContainer, styles.authContainerTrue]} testID="authDisplayTrue">
             <Text style={styles.authText}>
-              <Ionicons name="md-checkmark-circle" size={22} color={'white'} /> You are signed in as {account.login}
+              <Ionicons name="md-checkmark-circle" size={22} color={'white'} /> Bienvenue {account.login}
             </Text>
           </View>
         ) : (
           <View style={[styles.authContainer, styles.authContainerFalse]} testID="authDisplayFalse">
             <Text style={styles.authText}>
-              <Ionicons name="md-information-circle" size={22} color={'white'} /> You are not signed in.
+              <Ionicons name="md-information-circle" size={22} color={'white'} /> Se Connecter.
             </Text>
           </View>
         )}
@@ -40,24 +40,24 @@ function HomeScreen(props) {
         <View style={styles.body}>
           {Platform.OS !== 'android' ? null : (
             <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Running on Android</Text>
+              <Text style={styles.sectionTitle}>Vous etes</Text>
               <Text style={styles.sectionDescription}>
-                Run <Text style={styles.highlight}>adb reverse tcp:8080 tcp:8080</Text> to be able to connect to your JHipster backend
-                (Android only).
+                Gerant <Text style={styles.highlight}>dans une entreprise</Text>prenez rendez vous
               </Text>
             </View>
           )}
           <View style={styles.sectionContainer}>
-            <Text style={styles.sectionTitle}>Make Some Changes</Text>
+            <Text style={styles.sectionTitle}>Avec un conseiller banquier</Text>
             <Text style={styles.sectionDescription}>
-              Edit <Text style={styles.highlight}>app/modules/home/home-screen.js</Text> to change this screen and then come back to see
-              your edits.
+              Vous pouvez <Text style={styles.highlight}>prendre</Text> rendez vous tous les jours du lundi au vendredi entre 8h et 17h
             </Text>
           </View>
+          {/*
           <View style={styles.sectionContainer}>
             <Text style={styles.sectionTitle}>Learn More</Text>
           </View>
           <LearnMoreLinks />
+           */}
         </View>
       </ScrollView>
     </View>

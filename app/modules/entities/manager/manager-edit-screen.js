@@ -98,8 +98,8 @@ function ManagerEditScreen(props) {
             <FormField
               name="registrationNumber"
               ref={registrationNumberRef}
-              label="Registration Number"
-              placeholder="Enter Registration Number"
+              label="Numero de matricule"
+              placeholder="Entrer le numero de matricule"
               testID="registrationNumberInput"
               inputType="text"
               autoCapitalize="none"
@@ -109,7 +109,7 @@ function ManagerEditScreen(props) {
               name="department"
               ref={departmentRef}
               label="Department"
-              placeholder="Enter Department"
+              placeholder="Entrer le Department"
               testID="departmentInput"
               inputType="text"
               autoCapitalize="none"
@@ -130,8 +130,8 @@ function ManagerEditScreen(props) {
               ref={companyRef}
               listItems={companyList}
               listItemLabelField="name"
-              label="Company"
-              placeholder="Select Company"
+              label="ENTREPRISE"
+              placeholder="SELECTIONNER L'ENTREPRISE"
               testID="companySelectInput"
             />
 

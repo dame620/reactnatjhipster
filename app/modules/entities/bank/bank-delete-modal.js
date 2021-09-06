@@ -18,7 +18,7 @@ function BankDeleteModal(props) {
       <View testID={testID} style={styles.centeredView}>
         <View style={styles.modalView}>
           <View style={[styles.flex, styles.flexRow]}>
-            <Text style={styles.modalText}>Delete Bank {entity.id}?</Text>
+            <Text style={styles.modalText}>Supprimer la Bank {entity.id}?</Text>
           </View>
           <View style={[styles.flexRow]}>
             <TouchableHighlight
@@ -26,10 +26,10 @@ function BankDeleteModal(props) {
               onPress={() => {
                 setVisible(false);
               }}>
-              <Text style={styles.textStyle}>Cancel</Text>
+              <Text style={styles.textStyle}>Annuler</Text>
             </TouchableHighlight>
             <TouchableHighlight style={[styles.openButton, styles.submitButton]} onPress={deleteEntity} testID="deleteButton">
-              <Text style={styles.textStyle}>Delete</Text>
+              <Text style={styles.textStyle}>Supprimer</Text>
             </TouchableHighlight>
           </View>
         </View>

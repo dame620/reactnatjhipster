@@ -76,8 +76,8 @@ function BankEditScreen(props) {
             <FormField
               name="name"
               ref={nameRef}
-              label="Name"
-              placeholder="Enter Name"
+              label="NOM"
+              placeholder="Enterer le nom"
               testID="nameInput"
               inputType="text"
               autoCapitalize="none"
@@ -86,8 +86,8 @@ function BankEditScreen(props) {
             <FormField
               name="address"
               ref={addressRef}
-              label="Address"
-              placeholder="Enter Address"
+              label="ADRESSE"
+              placeholder="Entrer l'adresse"
               testID="addressInput"
               inputType="text"
               autoCapitalize="none"

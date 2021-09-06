@@ -26,7 +26,7 @@ function ManagerScreen(props) {
     return (
       <TouchableOpacity onPress={() => props.navigation.navigate('ManagerDetail', { entityId: item.id })}>
         <View style={styles.listRow}>
-          <Text style={styles.whiteLabel}>ID: {item.id}</Text>
+          <Text style={styles.whiteLabel}>MATRICULE: {item.registrationNumber}</Text>
           {/* <Text style={styles.label}>{item.description}</Text> */}
         </View>
       </TouchableOpacity>

@@ -31,6 +31,7 @@ export const entityScreens = [
     component: EntitiesScreen,
     options: {
       headerLeft: DrawerButton,
+      title: 'TACHES',
     },
   },
   {
@@ -38,7 +39,7 @@ export const entityScreens = [
     route: 'appointment',
     component: AppointmentScreen,
     options: {
-      title: 'Appointments',
+      title: 'RENDEZ VOUS',
       headerLeft: () => <HeaderBackButton onPress={() => navigate('Entities')} />,
       headerRight: () => (
         <HeaderBackButton
@@ -53,14 +54,14 @@ export const entityScreens = [
     name: 'AppointmentDetail',
     route: 'appointment/detail',
     component: AppointmentDetailScreen,
-    options: { title: 'View Appointment', headerLeft: () => <HeaderBackButton onPress={() => navigate('Appointment')} /> },
+    options: { title: 'DETAIL DU RENDEZ VOUS', headerLeft: () => <HeaderBackButton onPress={() => navigate('Appointment')} /> },
   },
   {
     name: 'AppointmentEdit',
     route: 'appointment/edit',
     component: AppointmentEditScreen,
     options: {
-      title: 'Edit Appointment',
+      title: 'MODIFIER LE RENDEZ VOUS',
       headerLeft: () => <HeaderBackButton onPress={() => goBackOrIfParamsOrDefault('AppointmentDetail', 'Appointment')} />,
     },
   },
@@ -69,7 +70,7 @@ export const entityScreens = [
     route: 'manager',
     component: ManagerScreen,
     options: {
-      title: 'Managers',
+      title: 'GERANT',
       headerLeft: () => <HeaderBackButton onPress={() => navigate('Entities')} />,
       headerRight: () => (
         <HeaderBackButton
@@ -84,14 +85,14 @@ export const entityScreens = [
     name: 'ManagerDetail',
     route: 'manager/detail',
     component: ManagerDetailScreen,
-    options: { title: 'View Manager', headerLeft: () => <HeaderBackButton onPress={() => navigate('Manager')} /> },
+    options: { title: 'DETAIL DU GERANT', headerLeft: () => <HeaderBackButton onPress={() => navigate('Manager')} /> },
   },
   {
     name: 'ManagerEdit',
     route: 'manager/edit',
     component: ManagerEditScreen,
     options: {
-      title: 'Edit Manager',
+      title: 'MODIFIER LE GERANT',
       headerLeft: () => <HeaderBackButton onPress={() => goBackOrIfParamsOrDefault('ManagerDetail', 'Manager')} />,
     },
   },
@@ -100,7 +101,7 @@ export const entityScreens = [
     route: 'company',
     component: CompanyScreen,
     options: {
-      title: 'Companies',
+      title: 'ENTREPRISES',
       headerLeft: () => <HeaderBackButton onPress={() => navigate('Entities')} />,
       headerRight: () => (
         <HeaderBackButton
@@ -115,14 +116,14 @@ export const entityScreens = [
     name: 'CompanyDetail',
     route: 'company/detail',
     component: CompanyDetailScreen,
-    options: { title: 'View Company', headerLeft: () => <HeaderBackButton onPress={() => navigate('Company')} /> },
+    options: { title: 'DETAIL ENTREPRISE', headerLeft: () => <HeaderBackButton onPress={() => navigate('Company')} /> },
   },
   {
     name: 'CompanyEdit',
     route: 'company/edit',
     component: CompanyEditScreen,
     options: {
-      title: 'Edit Company',
+      title: 'MODIFIER ENTREPRISE',
       headerLeft: () => <HeaderBackButton onPress={() => goBackOrIfParamsOrDefault('CompanyDetail', 'Company')} />,
     },
   },
@@ -131,7 +132,7 @@ export const entityScreens = [
     route: 'bank',
     component: BankScreen,
     options: {
-      title: 'Banks',
+      title: 'BANQUE',
       headerLeft: () => <HeaderBackButton onPress={() => navigate('Entities')} />,
       headerRight: () => (
         <HeaderBackButton
@@ -146,20 +147,20 @@ export const entityScreens = [
     name: 'BankDetail',
     route: 'bank/detail',
     component: BankDetailScreen,
-    options: { title: 'View Bank', headerLeft: () => <HeaderBackButton onPress={() => navigate('Bank')} /> },
+    options: { title: 'DETAIL DE LA BANQUE', headerLeft: () => <HeaderBackButton onPress={() => navigate('Bank')} /> },
   },
   {
     name: 'BankEdit',
     route: 'bank/edit',
     component: BankEditScreen,
-    options: { title: 'Edit Bank', headerLeft: () => <HeaderBackButton onPress={() => goBackOrIfParamsOrDefault('BankDetail', 'Bank')} /> },
+    options: { title: 'MODIFIER', headerLeft: () => <HeaderBackButton onPress={() => goBackOrIfParamsOrDefault('BankDetail', 'Bank')} /> },
   },
   {
     name: 'Adviser',
     route: 'adviser',
     component: AdviserScreen,
     options: {
-      title: 'Advisers',
+      title: 'CONSEILLERS',
       headerLeft: () => <HeaderBackButton onPress={() => navigate('Entities')} />,
       headerRight: () => (
         <HeaderBackButton
@@ -174,14 +175,14 @@ export const entityScreens = [
     name: 'AdviserDetail',
     route: 'adviser/detail',
     component: AdviserDetailScreen,
-    options: { title: 'View Adviser', headerLeft: () => <HeaderBackButton onPress={() => navigate('Adviser')} /> },
+    options: { title: 'DETAIL DU CONSEILLER', headerLeft: () => <HeaderBackButton onPress={() => navigate('Adviser')} /> },
   },
   {
     name: 'AdviserEdit',
     route: 'adviser/edit',
     component: AdviserEditScreen,
     options: {
-      title: 'Edit Adviser',
+      title: 'MODIFIER LE CONSEILLER',
       headerLeft: () => <HeaderBackButton onPress={() => goBackOrIfParamsOrDefault('AdviserDetail', 'Adviser')} />,
     },
   },

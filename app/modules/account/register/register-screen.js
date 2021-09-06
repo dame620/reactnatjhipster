@@ -27,7 +27,7 @@ function RegisterScreen(props) {
     setSuccess('');
     setError('');
     if (data.password !== data.confirmPassword) {
-      setError('Passwords do not match');
+      setError('mot de pass incorrect');
       return;
     }
     props.register(data);
@@ -38,7 +38,7 @@ function RegisterScreen(props) {
       if (props.error) {
         setError(props.error);
       } else {
-        setSuccess('Please check your email');
+        setSuccess('creation de compte reussi avec success');
       }
     }
   }, [props.fetching]);

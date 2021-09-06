@@ -30,7 +30,7 @@ function BankDetailScreen(props) {
   if (!entityId && !fetching && error) {
     return (
       <View style={styles.loading}>
-        <Text>Something went wrong fetching the Bank.</Text>
+        <Text>OUPS ERREUR ECHEC DE L ACTION.</Text>
       </View>
     );
   }
@@ -46,21 +46,21 @@ function BankDetailScreen(props) {
       <Text style={styles.label}>Id:</Text>
       <Text>{bank.id}</Text>
       {/* Name Field */}
-      <Text style={styles.label}>Name:</Text>
+      <Text style={styles.label}>NOM:</Text>
       <Text testID="name">{bank.name}</Text>
       {/* Address Field */}
-      <Text style={styles.label}>Address:</Text>
+      <Text style={styles.label}>ADDRESSE:</Text>
       <Text testID="address">{bank.address}</Text>
 
       <View style={styles.entityButtons}>
         <RoundedButton
-          text="Edit"
+          text="MODIFIER"
           onPress={() => navigation.navigate('BankEdit', { entityId })}
           accessibilityLabel={'Bank Edit Button'}
           testID="bankEditButton"
         />
         <RoundedButton
-          text="Delete"
+          text="SUPPRIMER"
           onPress={() => setDeleteModalVisible(true)}
           accessibilityLabel={'Bank Delete Button'}
           testID="bankDeleteButton"

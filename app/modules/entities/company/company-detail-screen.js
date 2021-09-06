@@ -46,16 +46,16 @@ function CompanyDetailScreen(props) {
       <Text style={styles.label}>Id:</Text>
       <Text>{company.id}</Text>
       {/* Name Field */}
-      <Text style={styles.label}>Name:</Text>
+      <Text style={styles.label}>NOM:</Text>
       <Text testID="name">{company.name}</Text>
       {/* Ninea Field */}
-      <Text style={styles.label}>Ninea:</Text>
+      <Text style={styles.label}>NINEA:</Text>
       <Text testID="ninea">{company.ninea}</Text>
       {/* Rc Field */}
-      <Text style={styles.label}>Rc:</Text>
+      <Text style={styles.label}>RC:</Text>
       <Text testID="rc">{company.rc}</Text>
       {/* Address Field */}
-      <Text style={styles.label}>Address:</Text>
+      <Text style={styles.label}>ADRESSE:</Text>
       <Text testID="address">{company.address}</Text>
 
       <View style={styles.entityButtons}>

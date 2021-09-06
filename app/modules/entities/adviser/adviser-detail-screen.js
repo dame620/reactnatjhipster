@@ -46,28 +46,28 @@ function AdviserDetailScreen(props) {
       <Text style={styles.label}>Id:</Text>
       <Text>{adviser.id}</Text>
       {/* RegistrationNumber Field */}
-      <Text style={styles.label}>RegistrationNumber:</Text>
+      <Text style={styles.label}>NUMERO MATRICULE</Text>
       <Text testID="registrationNumber">{adviser.registrationNumber}</Text>
       {/* Company Field */}
-      <Text style={styles.label}>Company:</Text>
+      <Text style={styles.label}>ENTREPRISE</Text>
       <Text testID="company">{adviser.company}</Text>
       {/* Department Field */}
       <Text style={styles.label}>Department:</Text>
       <Text testID="department">{adviser.department}</Text>
       <Text style={styles.label}>User:</Text>
       <Text testID="user">{String(adviser.user ? adviser.user.login : '')}</Text>
-      <Text style={styles.label}>Bank:</Text>
+      <Text style={styles.label}>BANQUE</Text>
       <Text testID="bank">{String(adviser.bank ? adviser.bank.name : '')}</Text>
 
       <View style={styles.entityButtons}>
         <RoundedButton
-          text="Edit"
+          text="MODIFIER"
           onPress={() => navigation.navigate('AdviserEdit', { entityId })}
           accessibilityLabel={'Adviser Edit Button'}
           testID="adviserEditButton"
         />
         <RoundedButton
-          text="Delete"
+          text="SUPPRIMER"
           onPress={() => setDeleteModalVisible(true)}
           accessibilityLabel={'Adviser Delete Button'}
           testID="adviserDeleteButton"

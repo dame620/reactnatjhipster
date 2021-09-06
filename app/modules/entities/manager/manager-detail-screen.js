@@ -30,7 +30,7 @@ function ManagerDetailScreen(props) {
   if (!entityId && !fetching && error) {
     return (
       <View style={styles.loading}>
-        <Text>Something went wrong fetching the Manager.</Text>
+        <Text>Oups echec quelque chose c'est mal passé.</Text>
       </View>
     );
   }
@@ -46,14 +46,14 @@ function ManagerDetailScreen(props) {
       <Text style={styles.label}>Id:</Text>
       <Text>{manager.id}</Text>
       {/* RegistrationNumber Field */}
-      <Text style={styles.label}>RegistrationNumber:</Text>
+      <Text style={styles.label}>NUMERO MATRICULE:</Text>
       <Text testID="registrationNumber">{manager.registrationNumber}</Text>
       {/* Department Field */}
       <Text style={styles.label}>Department:</Text>
       <Text testID="department">{manager.department}</Text>
       <Text style={styles.label}>User:</Text>
       <Text testID="user">{String(manager.user ? manager.user.login : '')}</Text>
-      <Text style={styles.label}>Company:</Text>
+      <Text style={styles.label}>ENTREPRISE:</Text>
       <Text testID="company">{String(manager.company ? manager.company.name : '')}</Text>
 
       <View style={styles.entityButtons}>

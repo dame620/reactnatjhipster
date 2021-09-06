@@ -30,7 +30,7 @@ function AppointmentDetailScreen(props) {
   if (!entityId && !fetching && error) {
     return (
       <View style={styles.loading}>
-        <Text>Something went wrong fetching the Appointment.</Text>
+        <Text>OUPS UNE ERREUR ECHEC DE L ACTION.</Text>
       </View>
     );
   }
@@ -46,31 +46,31 @@ function AppointmentDetailScreen(props) {
       <Text style={styles.label}>Id:</Text>
       <Text>{appointment.id}</Text>
       {/* Reason Field */}
-      <Text style={styles.label}>Reason:</Text>
+      <Text style={styles.label}>MOTIF DU RENDEZ VOUS:</Text>
       <Text testID="reason">{appointment.reason}</Text>
       {/* Date Field */}
       <Text style={styles.label}>Date:</Text>
       <Text testID="date">{String(appointment.date)}</Text>
       {/* State Field */}
-      <Text style={styles.label}>State:</Text>
+      <Text style={styles.label}>ETAT RENDEZ VOUS</Text>
       <Text testID="state">{String(appointment.state)}</Text>
       {/* Reportreason Field */}
-      <Text style={styles.label}>Reportreason:</Text>
+      <Text style={styles.label}>RAISON DU REPPORT</Text>
       <Text testID="reportreason">{appointment.reportreason}</Text>
-      <Text style={styles.label}>Adviser:</Text>
+      <Text style={styles.label}>CONSEILLER</Text>
       <Text testID="adviser">{String(appointment.adviser ? appointment.adviser.registrationNumber : '')}</Text>
-      <Text style={styles.label}>Manager:</Text>
+      <Text style={styles.label}>GERANT</Text>
       <Text testID="manager">{String(appointment.manager ? appointment.manager.registrationNumber : '')}</Text>
 
       <View style={styles.entityButtons}>
         <RoundedButton
-          text="Edit"
+          text="MODIFIER"
           onPress={() => navigation.navigate('AppointmentEdit', { entityId })}
           accessibilityLabel={'Appointment Edit Button'}
           testID="appointmentEditButton"
         />
         <RoundedButton
-          text="Delete"
+          text="SUPPRIMER"
           onPress={() => setDeleteModalVisible(true)}
           accessibilityLabel={'Appointment Delete Button'}
           testID="appointmentDeleteButton"

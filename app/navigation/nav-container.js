@@ -29,6 +29,9 @@ export const drawerScreens = [
     name: 'Home',
     component: HomeScreen,
     auth: null,
+    options: {
+      title: 'ACCEUIL',
+    },
   },
   {
     name: 'Login',
@@ -41,12 +44,18 @@ export const drawerScreens = [
     route: 'settings',
     component: SettingsScreen,
     auth: true,
+    options: {
+      title: 'PARAMETRES DU COMPTE',
+    },
   },
   {
     name: 'Register',
     route: 'register',
     component: RegisterScreen,
-    auth: false,
+    auth: true,
+    options: {
+      title: 'CRÉER UN COMPTE',
+    },
   },
   {
     name: 'Forgot Password',
@@ -55,17 +64,20 @@ export const drawerScreens = [
     auth: false,
   },
   {
-    name: 'Change Password',
+    name: 'CHANGER DE MOT DE PASS',
     route: 'change-password',
     component: ChangePasswordScreen,
     auth: true,
+    Options: {
+      title: 'CHANGER DE MOT DE PASS',
+    },
   },
   {
     name: 'EntityStack',
     isStack: true,
     component: EntityStackScreen,
     options: {
-      title: 'Entities',
+      title: 'TACHES',
       headerShown: false,
     },
     auth: true,

@@ -100,8 +100,8 @@ function AppointmentEditScreen(props) {
             <FormField
               name="reason"
               ref={reasonRef}
-              label="Reason"
-              placeholder="Enter Reason"
+              label="MOTIF DU RENDEZ VOUS"
+              placeholder="Entrer le motif du rendez vous"
               testID="reasonInput"
               inputType="text"
               autoCapitalize="none"
@@ -111,16 +111,16 @@ function AppointmentEditScreen(props) {
               name="date"
               ref={dateRef}
               label="Date"
-              placeholder="Enter Date"
+              placeholder="Entrer la  Date"
               testID="dateInput"
               inputType="datetime"
               onSubmitEditing={() => stateRef.current?.focus()}
             />
             <FormField
-              name="state"
+              name="ETAT RENDEZ VOUS"
               ref={stateRef}
               label="State"
-              placeholder="Enter State"
+              placeholder="Entrer état du rendez vous"
               testID="stateInput"
               inputType="boolean"
               onSubmitEditing={() => reportreasonRef.current?.focus()}
@@ -128,8 +128,8 @@ function AppointmentEditScreen(props) {
             <FormField
               name="reportreason"
               ref={reportreasonRef}
-              label="Reportreason"
-              placeholder="Enter Reportreason"
+              label="RAISON DU REPPORT"
+              placeholder="ENTRER LA RAISON DU REPPORT"
               testID="reportreasonInput"
               inputType="text"
               autoCapitalize="none"
@@ -140,8 +140,8 @@ function AppointmentEditScreen(props) {
               ref={adviserRef}
               listItems={adviserList}
               listItemLabelField="registrationNumber"
-              label="Adviser"
-              placeholder="Select Adviser"
+              label="CONSEILLER"
+              placeholder="SELECTIONNER LE CONSEILLER"
               testID="adviserSelectInput"
             />
             <FormField
@@ -150,8 +150,8 @@ function AppointmentEditScreen(props) {
               ref={managerRef}
               listItems={managerList}
               listItemLabelField="registrationNumber"
-              label="Manager"
-              placeholder="Select Manager"
+              label="GERANT"
+              placeholder="SELECTIONNER LE GERANT"
               testID="managerSelectInput"
             />
 
