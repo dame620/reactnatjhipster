@@ -95,9 +95,6 @@ if (__DEV__) {
     route: 'storybook',
     component: StorybookScreen,
     auth: false,
-    Options: {
-      title: 'MODE D AFFICHAGE',
-    },
   });
 }
 export const getDrawerRoutes = () => {
