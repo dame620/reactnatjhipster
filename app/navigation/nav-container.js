@@ -38,6 +38,9 @@ export const drawerScreens = [
     route: 'login',
     component: LoginScreen,
     auth: false,
+    options: {
+      title: 'SE CONNECTER',
+    },
   },
   {
     name: 'Settings',
@@ -62,6 +65,9 @@ export const drawerScreens = [
     route: 'reset-password',
     component: ForgotPasswordScreen,
     auth: false,
+    options: {
+      title: 'MOT DE PASSE OUBLIER',
+    },
   },
   {
     name: 'CHANGER DE MOT DE PASS',
@@ -69,7 +75,7 @@ export const drawerScreens = [
     component: ChangePasswordScreen,
     auth: true,
     Options: {
-      title: 'CHANGER DE MOT DE PASS',
+      title: 'CHANGER DE MOT DE PASSE',
     },
   },
   {
@@ -89,6 +95,9 @@ if (__DEV__) {
     route: 'storybook',
     component: StorybookScreen,
     auth: false,
+    Options: {
+      title: 'MODE D AFFICHAGE',
+    },
   });
 }
 export const getDrawerRoutes = () => {
