@@ -5,7 +5,7 @@ const extra = Constants.manifest?.extra ?? {};
 
 export default {
   // use 10.0.2.2 for Android to connect to host machine
-  apiUrl: 'http://bankappointment.herokuapp.com/',
+  apiUrl: 'https://baamtuappointmen.herokuapp.com/',
   // use fixtures instead of real API requests
   useFixtures: false,
   // debug mode
