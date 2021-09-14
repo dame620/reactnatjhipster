@@ -55,7 +55,7 @@ export const drawerScreens = [
     name: 'Register',
     route: 'register',
     component: RegisterScreen,
-    auth: true,
+    auth: false,
     options: {
       title: 'CRÉER UN COMPTE',
     },
